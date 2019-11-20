@@ -7,17 +7,47 @@
 .d-flex{
     margin: 10px;
 }
-.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
+
+#socialMedia{
+    width: 210px;
 }
-.rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1.5em;
+/* component */
+
+.star-rating {
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
 }
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
+
+.star-rating input {
+  display:none;
+}
+
+.star-rating label {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.star-rating :checked ~ label {
+  color:#f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#fc0;
+}
+.endOfPage{
+    text-align: center;
+    max-height:100px;
+    color: white;
+    background-color: black;
+    width: 100%;
+	height: 100%;
+}
+.endText{
+    margin-bottom: 0;
 }

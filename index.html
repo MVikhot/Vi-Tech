@@ -49,9 +49,11 @@
                     <a class="nav-link" href="#"><button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img
                                 src="img/user.png" width="30" height="30" class="d-inline-block align-top"
                                 alt="user"></button></a>
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="img/search.png"
-                            width="30" height="30" class="d-inline-block align-top" alt="search"></button>
+                    <form id="searchForm" action="javascript:search()">
+                    <input type="text" id="searchItem" class="form-control" placeholder="Search">
+                    <button id="go" class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="document.getElementById('searchForm').submit(); return false;">
+                    <img src="img/search.png" width="30" height="30" class="d-inline-block align-top" alt="search"></button>
+                    </form>
                 </form>
             </div>
         </nav>
@@ -67,91 +69,119 @@
                         Apple’s free mobile operating system is compatible with models dating as far back as 2015’s
                         iPhone 6s and 6s Plus.</p>
                 </div>
-                    <div class="d-flex align-items-end">
-                    <a href="#" class="btn btn-dark" >Read more</a>
-                    </div>               
+                <div class="d-flex align-items-end">
+                    <a href="#" class="btn btn-dark">Read more</a>
+                </div>
             </div>
             <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
                 <img src="img/cloud.jpg" class="card-img-top" alt="cloud">
                 <div class="card-body">
                     <h5 class="card-title">5 Reasons Investing In Cloud Storage Works</h5>
-                    <p class="card-text">Some cloud services offers a few gigabytes for free, but after about one year there is a service charge that
-            is applied monthly to have an increased amount of storage or for use of the service.</p>
+                    <p class="card-text">Some cloud services offers a few gigabytes for free, but after about one year
+                        there is a service charge that
+                        is applied monthly to have an increased amount of storage or for use of the service.</p>
                 </div>
-                    <div class="d-flex align-items-end">
-                    <a href="#" class="btn btn-dark" >Read more</a>
-                    </div>               
+                <div class="d-flex align-items-end">
+                    <a href="#" class="btn btn-dark">Read more</a>
+                </div>
             </div>
-               <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
                 <img src="img/gita.jpg" class="card-img-top" alt="gita">
                 <div class="card-body">
                     <h5 class="card-title">Gita – The New Cargo Robot</h5>
-                    <p class="card-text">Many of the consumer-focused personal robots became duds just months after being released, the first social robot, Jibo flopped...</p>
+                    <p class="card-text">Many of the consumer-focused personal robots became duds just months after
+                        being released, the first social robot, Jibo flopped...</p>
                 </div>
-                    <div class="d-flex align-items-end">
-                    <a href="#" class="btn btn-dark" >Read more</a>
-                    </div>               
+                <div class="d-flex align-items-end">
+                    <a href="#" class="btn btn-dark">Read more</a>
+                </div>
             </div>
-               <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
                 <img src="img/bio-leg.jpg" class="card-img-top" alt="bio-leg">
                 <div class="card-body">
                     <h5 class="card-title">How We'll Become Cyborgs And Extend Human Potential</h5>
-                    <p class="card-text">Humans will soon have new bodies that forever blur the line between the natural and synthetic worlds</p>
+                    <p class="card-text">Humans will soon have new bodies that forever blur the line between the natural
+                        and synthetic worlds</p>
                 </div>
-                    <div class="d-flex align-items-end">
-                    <a href="#" class="btn btn-dark" >Read more</a>
-                    </div>               
+                <div class="d-flex align-items-end">
+                    <a href="#" class="btn btn-dark">Read more</a>
+                </div>
             </div>
-             <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
                 <img src="img/dirty-device.jpg" class="card-img-top" alt="dirty-device">
                 <div class="card-body">
                     <h5 class="card-title">5 Common Mistakes That Shorten The Life Of Your Gadgets</h5>
-                    <p class="card-text">Most people are not in a position that they can regularly afford to replace their devices, so that is the main reason to take good care of them.</p>
+                    <p class="card-text">Most people are not in a position that they can regularly afford to replace
+                        their devices, so that is the main reason to take good care of them.</p>
                 </div>
-                    <div class="d-flex align-items-end">
-                    <a href="#" class="btn btn-dark" >Read more</a>
-                    </div>               
+                <div class="d-flex align-items-end">
+                    <a href="#" class="btn btn-dark">Read more</a>
+                </div>
             </div>
-             <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
                 <img src="img/hard-drive.jpg" class="card-img-top" alt="hard-drive">
                 <div class="card-body">
                     <h5 class="card-title">5 Reasons To Save Using An External Hard Drive</h5>
-                    <p class="card-text">Most people are not in a position that they can regularly afford to replace their devices, so that is the main reason to take good care of them.</p>
+                    <p class="card-text">Most people are not in a position that they can regularly afford to replace
+                        their devices, so that is the main reason to take good care of them.</p>
                 </div>
-                    <div class="d-flex align-items-end">
-                    <a href="#" class="btn btn-dark" >Read more</a>
-                    </div>               
+                <div class="d-flex align-items-end">
+                    <a href="#" class="btn btn-dark">Read more</a>
+                </div>
             </div>
-                <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
                 <img src="img/smartphone.jpg" class="card-img-top" alt="smartphone">
                 <div class="card-body">
                     <h5 class="card-title">Google Pixel 4 camera features leaked, spotted audio zoom feature</h5>
-                    <p class="card-text">The information of Pixel 4, the next device of the Google Pixel series, has been leaking for the past several months.</p>
+                    <p class="card-text">The information of Pixel 4, the next device of the Google Pixel series, has
+                        been leaking for the past several months.</p>
                 </div>
-                    <div class="d-flex align-items-end">
-                    <a href="#" class="btn btn-dark" >Read more</a>
-                    </div>               
+                <div class="d-flex align-items-end">
+                    <a href="#" class="btn btn-dark">Read more</a>
+                </div>
             </div>
-                            <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
                 <img src="img/android.jpg" class="card-img-top" alt="android">
                 <div class="card-body">
                     <h5 class="card-title">Android 10 release, know about its new features</h5>
                     <p class="card-text">Android 10 has been released for all Pixel phones</p>
                 </div>
-                    <div class="d-flex align-items-end">
-                    <a href="#" class="btn btn-dark" >Read more</a>
-                    </div>               
+                <div class="d-flex align-items-end">
+                    <a href="#" class="btn btn-dark">Read more</a>
+                </div>
             </div>
         </div>
-<div class="rating">
-<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-</div>
-
     </main>
-
-    <footer>&reg;All Right Receive 2019
-        </footer>
-
+    <div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button onclick="openFacebook()" class="btn btn-outline-success my-2 my-sm-0" id="socialMedia"
+                type="submit">Find us in Facebook&nbsp;&nbsp;<img src="img/facebook.png" width="30" height="30"
+                    class="d-inline-block align-top" alt="facebook"></button>
+            <button onclick="openTwitter()" class="btn btn-outline-success my-2 my-sm-0" id="socialMedia"
+                type="submit">Find us in Twitter&nbsp;&nbsp;<img src="img/twitter.png" width="30" height="30"
+                    class="d-inline-block align-top" alt="twitter"></button>
+            <button onclick="openInstagram()" class="btn btn-outline-success my-2 my-sm-0" id="socialMedia"
+                type="submit">Find us in Instagram&nbsp;&nbsp;<img src="img/instagram.png" width="30" height="30"
+                    class="d-inline-block align-top" alt="instagram"></button>
+            <a class="navbar-brand" href="#">Like Us
+                <div class="star-rating">
+                    <input type="radio" id="5-stars" name="rating" value="5" />
+                    <label for="5-stars" class="star">&#9733;</label>
+                    <input type="radio" id="4-stars" name="rating" value="4" />
+                    <label for="4-stars" class="star">&#9733;</label>
+                    <input type="radio" id="3-stars" name="rating" value="3" />
+                    <label for="3-stars" class="star">&#9733;</label>
+                    <input type="radio" id="2-stars" name="rating" value="2" />
+                    <label for="2-stars" class="star">&#9733;</label>
+                    <input type="radio" id="1-star" name="rating" value="1" />
+                    <label for="1-star" class="star">&#9733;</label>
+                </div>
+            </a>
+        </nav>
+    </div>
+    <footer class="endOfPage">
+        <h6 class="endText">&reg;All Right Receive 2019</h6>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
@@ -161,6 +191,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
+        <script src="js/index.js"></script>
+
 </body>
 
 </html>
