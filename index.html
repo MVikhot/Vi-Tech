@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Vi-tech</a>
+            <a class="navbar-brand" href="index.html"><h1>Vi-tech</h1></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,25 +42,27 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                <form name="f1" id="f1" action="" class="form-inline my-2 my-lg-0">
                     <a class="nav-link" href="#"><button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img
                                 src="img/user.png" width="30" height="30" class="d-inline-block align-top"
                                 alt="user"></button></a>
-                    <form id="searchForm" action="javascript:search()">
-                    <input type="text" id="searchItem" class="form-control" placeholder="Search">
-                    <button id="go" class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="document.getElementById('searchForm').submit(); return false;">
-                    <img src="img/search.png" width="30" height="30" class="d-inline-block align-top" alt="search"></button>
+                    <form class="form-inline my-2 my-lg-0" name="f1" id="f1" action="">
+                    <input input type="text" class="t1" name="t1" placeholder="search" />
+                    <a class="nav-link">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    <img src="img/search.png" width="30" height="30" class="d-inline-block align-top" alt="search"></button></a>
                     </form>
                 </form>
             </div>
         </nav>
     </header>
+
     <main class="container">
-        <div class="product-list row">
-            <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-list row" id="question-list-container">
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3" data-question-id="6414827">
                 <img src="img/iphone.jpg" class="card-img-top" alt="iphone">
                 <div class="card-body">
                     <h5 class="card-title">7 Hidden Ways To Improve Yours Apple iPhone</h5>
@@ -70,7 +72,7 @@
                         iPhone 6s and 6s Plus.</p>
                 </div>
                 <div class="d-flex align-items-end">
-                    <a href="#" class="btn btn-dark">Read more</a>
+                    <a onclick="openNews()" class="btn btn-dark">Read more</a>
                 </div>
             </div>
             <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
@@ -155,13 +157,13 @@
     <div>
         <nav class="navbar navbar-dark bg-dark">
             <button onclick="openFacebook()" class="btn btn-outline-success my-2 my-sm-0" id="socialMedia"
-                type="submit">Find us in Facebook&nbsp;&nbsp;<img src="img/facebook.png" width="30" height="30"
+                type="submit">Find us in &nbsp;&nbsp;<img src="img/facebook.png" width="30" height="30"
                     class="d-inline-block align-top" alt="facebook"></button>
             <button onclick="openTwitter()" class="btn btn-outline-success my-2 my-sm-0" id="socialMedia"
-                type="submit">Find us in Twitter&nbsp;&nbsp;<img src="img/twitter.png" width="30" height="30"
+                type="submit">Find us in &nbsp;&nbsp;<img src="img/twitter.png" width="30" height="30"
                     class="d-inline-block align-top" alt="twitter"></button>
             <button onclick="openInstagram()" class="btn btn-outline-success my-2 my-sm-0" id="socialMedia"
-                type="submit">Find us in Instagram&nbsp;&nbsp;<img src="img/instagram.png" width="30" height="30"
+                type="submit">Find us in &nbsp;&nbsp;<img src="img/instagram.png" width="30" height="30"
                     class="d-inline-block align-top" alt="instagram"></button>
             <a class="navbar-brand" href="#">Like Us
                 <div class="star-rating">
@@ -191,7 +193,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
+        <script src="https://unpkg.com/lunr/lunr.js"></script>
         <script src="js/index.js"></script>
+        <script src="js/search.js"></script>
 
 </body>
 
