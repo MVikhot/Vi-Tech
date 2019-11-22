@@ -1,6 +1,7 @@
-const modal = document.getElementById("newsModal");
-const btn = document.getElementById("readBtn");
-const span = document.getElementsByClassName("close")[0];
+let modal = document.getElementById("newsModal");
+let btn = document.getElementById("readBtn");
+let span = document.getElementsByClassName("close")[0];
+
 
 btn.onclick = function(){
     modal.style.display = "block";

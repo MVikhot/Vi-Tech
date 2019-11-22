@@ -74,7 +74,7 @@
 						iPhone 6s and 6s Plus.</p>
 				</div>
 				<div class="d-flex align-items-end">
-					<button id="readBtn" class="btn btn-dark" data-id="1" data-toggle="modal" data-target="#productInfoModal" onclick="btnOnclik()">Read more</button>
+					<button onclick="fetchNews()" id="readBtn" class="btn btn-dark" data-id="1" data-toggle="modal" data-target="#productInfoModal" >Read more</button>
 				</div>
 			</div>
 			<div class="card col-12 col-sm-6 col-md-4 col-lg-3">
@@ -86,7 +86,7 @@
 						is applied monthly to have an increased amount of storage or for use of the service.</p>
 				</div>
 				<div class="d-flex align-items-end">
-					<a href="#" class="btn btn-dark">Read more</a>
+					<button onclick="fetchNews()" id="readBtn" class="btn btn-dark" data-id="1" data-toggle="modal" data-target="#productInfoModal" >Read more</button>
 				</div>
 			</div>
 			<div class="card col-12 col-sm-6 col-md-4 col-lg-3">
@@ -156,28 +156,30 @@
 			</div>
 		</div>
 	</main>
-    
- <!-- Modal Product Info -->
-    <div id="newsModal" class="modal"  tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="productInfoLabel">Detail information</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+
+ <!--Modal Product Info-->
+    <div id="newsModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productInfoLabel"></h5>
+                    <img id="newimg" class="card-img-top" src="img/iphone.jpg" alt="iphone">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
           </div>
-          <div class="modal-body">
-              <img class="card-img-top" src="" alt="">
-              <h4 class="card-title"></h4>
-              <p class="card-text"></p>
+                    <div class="modal-body">
+                        <span class="news-title"></span>
+                        <hr>
+                            <span class="news-txt"></span>
+                            <h4 class="card-title"></h4>
+                            <p class="card-text"></p>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 	<div>
@@ -222,6 +224,7 @@
 	<script defer src="https://unpkg.com/lunr/lunr.js"></script>
 	<script defer src="js/index.js"></script>
 	<script defer src="js/search.js"></script>
+    <script defer src="js/news.js"></script>
 
 </body>
 
